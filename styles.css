@@ -98,15 +98,25 @@ form button:hover {
   margin: 15% auto;
   padding: 2rem;
   border: 1px solid #777;
+  position: relative;
   text-align: center;
   animation: slide ease 0.8s;
 }
 
 @keyframes slide {
-  from {
-    transform: translateY(-30);
+  0% {
+    transform: translateY(-30rem);
   }
-  to {
+  100% {
     transform: translateY(0);
   }
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  column-rule: var(--color-primary);
+  font-size: 2rem;
+  cursor: pointer;
 }
